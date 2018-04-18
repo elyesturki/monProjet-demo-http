@@ -14,7 +14,7 @@ import { PostsListComponent } from './components/posts-list/posts-list.component
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PostsListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
