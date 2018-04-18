@@ -26,6 +26,6 @@ export class PostsListService {
         title: 'Titre 300',
         body: 'Body 300'
       }
-    ]
+    ];
   }
 }
