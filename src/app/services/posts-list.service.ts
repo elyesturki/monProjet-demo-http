@@ -6,6 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PostsListService {
+
   URL = "https://jsonplaceholder.typicode.com/posts";
   constructor( private _http: Http) { }
 
