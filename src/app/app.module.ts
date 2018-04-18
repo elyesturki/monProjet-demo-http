@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { PostsListService } from './services/posts-list.service';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PostsListService } from './services/posts-list.service';
     PostsListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [PostsListService],
   bootstrap: [AppComponent]

@@ -12,7 +12,9 @@ export class PostsListComponent implements OnInit {
   constructor( private _service: PostsListService) { }
 
   ngOnInit() {
-    this.data = this._service.getAllPosts();
+    this._service.getAllPosts().subscribe(
+      posts => this.data = posts
+    );
   }
 
 }
